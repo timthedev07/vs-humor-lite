@@ -1,9 +1,9 @@
-interface Preview {
+export interface Preview {
   enabled: boolean;
   images: Image[];
 }
 
-interface Image {
+export interface Image {
   id: string;
   resolutions: Resolution[];
   source: Resolution;
@@ -12,7 +12,7 @@ interface Image {
 
 interface Variants {}
 
-interface Resolution {
+export interface Resolution {
   height: number;
   url: string;
   width: number;
