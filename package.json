@@ -31,8 +31,8 @@
     "viewsContainers": {
       "activitybar": [
         {
-          "id": "vs-tictactoe-sidebar-view",
-          "title": "VS-TicTacToe",
+          "id": "vs-humor-light-sidebar-view",
+          "title": "vs-humor-light",
           "icon": "media/humor.svg"
         }
       ]

@@ -1,7 +1,7 @@
 import * as vscode from "vscode";
 import { SidebarProvider } from "./SidebarProvider";
 
-const ENTRY_COMMAND = "vs-tictactoe.play";
+const ENTRY_COMMAND = "vs-humor-light.meme";
 
 export function activate(context: vscode.ExtensionContext) {
   const sidebarProvider = new SidebarProvider(context.extensionUri);
@@ -9,13 +9,13 @@ export function activate(context: vscode.ExtensionContext) {
   const item = vscode.window.createStatusBarItem(
     vscode.StatusBarAlignment.Right
   );
-  item.text = "$(beaker) Start a Tic-Tac-Toe game";
+  item.text = "$(beaker) Start slacking off.";
   item.command = ENTRY_COMMAND;
   item.show();
 
   context.subscriptions.push(
     vscode.window.registerWebviewViewProvider(
-      "vs-tictactoe.side-bar",
+      "vs-humor-lite.side-bar",
       sidebarProvider
     )
   );
