@@ -23,8 +23,8 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:vs-tictactoe.play",
-    "onView:vs-tictactoe.side-bar"
+    "onCommand:vs-humor-lite.meme",
+    "onView:vs-humor-lite.side-bar"
   ],
   "main": "./dist/extension.js",
   "contributes": {
