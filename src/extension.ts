@@ -1,7 +1,7 @@
 import * as vscode from "vscode";
 import { SidebarProvider } from "./SidebarProvider";
 
-const ENTRY_COMMAND = "vs-humor-light.meme";
+const ENTRY_COMMAND = "vs-humor-lite.meme";
 
 export function activate(context: vscode.ExtensionContext) {
   const sidebarProvider = new SidebarProvider(context.extensionUri);
