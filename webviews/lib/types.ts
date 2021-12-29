@@ -23,4 +23,5 @@ export interface RedditPost {
   full_link: string;
   is_video: boolean;
   preview: Preview;
+  title: string;
 }
