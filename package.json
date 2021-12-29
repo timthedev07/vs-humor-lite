@@ -31,7 +31,7 @@
     "viewsContainers": {
       "activitybar": [
         {
-          "id": "vs-humor-light-sidebar-view",
+          "id": "vs-humor-lite-sidebar-view",
           "title": "vs-humor-light",
           "icon": "media/humor.svg"
         }
