@@ -2,5 +2,11 @@
   "extends": "@tsconfig/svelte/tsconfig.json",
   "include": ["./**/*.*"],
   "exclude": ["../node_modules/*"],
-  "compilerOptions": { "strict": true, "types": ["svelte"] }
+  "compilerOptions": {
+    "target": "ES2021",
+    "strict": true,
+    "types": ["svelte"],
+    "rootDir": "."
+    // "lib": ["ES2021.String"]
+  }
 }
