@@ -1,9 +1,9 @@
 {
   "name": "vs-humor-lite",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "timthedev07",
   "galleryBanner": {
-    "color": "#0b73f0"
+    "color": "#bd9982"
   },
   "repository": {
     "url": "https://github.com/timthedev07/vs-humor-lite"
