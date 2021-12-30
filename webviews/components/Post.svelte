@@ -10,7 +10,7 @@
 </script>
 
 <article>
-  <h4>{title}</h4>
+  <h2>{title}</h2>
   <h5>By: {author}</h5>
   <div class="post-img-container">
     {#if preview}
@@ -51,10 +51,11 @@
     margin: 8px;
     border-radius: 7px;
     padding: 10px;
+    width: 100%;
   }
 
   img {
-    max-width: 90%;
+    max-width: 95%;
     border-radius: 7px;
   }
 

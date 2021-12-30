@@ -19,12 +19,20 @@
     width: 100%;
   }
 
+  main {
+    width: 100%;
+  }
+
   h2,
   h5 {
     text-align: center;
   }
 
   #App {
-    min-width: 230px;
+    min-width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 </style>
