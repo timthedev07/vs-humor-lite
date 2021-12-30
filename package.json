@@ -1,6 +1,6 @@
 {
   "name": "vs-humor-lite",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "timthedev07",
   "galleryBanner": {
     "color": "#0b73f0"
@@ -13,7 +13,7 @@
     "email": "timbusiness.work07@gmail.com",
     "name": "Tim"
   },
-  "displayName": "vs-tictactoe",
+  "displayName": "vs-humor-lite",
   "description": "Slacking off a work right in VSCode.",
   "license": "MIT",
   "engines": {
