@@ -2,6 +2,7 @@ import * as vscode from "vscode";
 import { SidebarProvider } from "./SidebarProvider";
 
 const ENTRY_COMMAND = "vs-humor-lite.meme";
+const TIP = "vs-humor-lite.tip";
 
 export function activate(context: vscode.ExtensionContext) {
   const sidebarProvider = new SidebarProvider(context.extensionUri);
@@ -12,6 +13,14 @@ export function activate(context: vscode.ExtensionContext) {
   item.text = "$(beaker) Start slacking off.";
   item.command = ENTRY_COMMAND;
   item.show();
+
+  context.subscriptions.push(
+    vscode.commands.registerCommand(TIP, () => {
+      vscode.window.showInformationMessage(
+        "Tip: resize the window to see some of the pictures!"
+      );
+    })
+  );
 
   context.subscriptions.push(
     vscode.window.registerWebviewViewProvider(

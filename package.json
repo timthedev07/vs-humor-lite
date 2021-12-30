@@ -52,6 +52,10 @@
       {
         "command": "vs-humor-lite.meme",
         "title": "Start meming in r/ProgrammerHumor"
+      },
+      {
+        "command": "vs-humor-lite.tip",
+        "title": "vs-humor-lite: Get Tip."
       }
     ]
   },
