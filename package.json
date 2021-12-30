@@ -24,7 +24,8 @@
   ],
   "activationEvents": [
     "onCommand:vs-humor-lite.meme",
-    "onView:vs-humor-lite.side-bar"
+    "onView:vs-humor-lite.side-bar",
+    "onStartupFinished"
   ],
   "main": "./dist/extension.js",
   "contributes": {
