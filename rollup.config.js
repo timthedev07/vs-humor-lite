@@ -41,6 +41,7 @@ export default (() => {
       commonjs(),
       typescript({
         tsconfig: "webviews/tsconfig.json",
+        rootDir: ".",
         sourceMap: !production,
         inlineSources: !production,
       }),
