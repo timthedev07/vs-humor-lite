@@ -18,10 +18,27 @@ export interface Resolution {
   width: number;
 }
 
+interface P {
+  u: string;
+  x: number;
+  y: number;
+}
+
 export interface RedditPost {
   author: string;
   full_link: string;
   is_video: boolean;
   preview: Preview;
   title: string;
+  media_metadata: Record<
+    string,
+    {
+      e: string;
+      id: string;
+      m: string;
+      p: P[];
+      s: P;
+      status: string;
+    }
+  >;
 }
