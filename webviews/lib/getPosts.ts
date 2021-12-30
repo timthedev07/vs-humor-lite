@@ -1,11 +1,13 @@
 import type { RedditPost } from "./types";
 
 export const getPosts = async (
+  page: number = 0,
+  lastFetch?: number,
   size: number = 20,
-  timeFrameInSeconds: number = 50000,
-  page: number = 0
+  timeFrameInSeconds: number = 50000
 ) => {
-  const before = Math.ceil(Date.now() / 1000) - page * timeFrameInSeconds;
+  const before =
+    Math.ceil((lastFetch || Date.now()) / 1000) - page * timeFrameInSeconds;
   const after = before - (page + 1) * timeFrameInSeconds;
 
   const response = await fetch(
@@ -15,7 +17,10 @@ export const getPosts = async (
 
   const data = await response.json();
 
-  return ((data as any).data || []) as RedditPost[];
+  return filterPosts(((data as any).data || []) as RedditPost[]);
 };
 
-getPosts().then((res) => console.log(res));
+export const filterPosts = (posts: RedditPost[]) => {
+  const excludedPosts = ["self"];
+  return posts.filter((each) => excludedPosts.indexOf(each.thumbnail) === -1);
+};
