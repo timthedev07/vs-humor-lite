@@ -30,6 +30,8 @@ export interface RedditPost {
   is_video: boolean;
   preview: Preview;
   title: string;
+  link_flair_type: string;
+  thumbnail: string;
   media_metadata: Record<
     string,
     {
