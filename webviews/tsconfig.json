@@ -7,6 +7,5 @@
     "strict": true,
     "types": ["svelte"],
     "rootDir": "."
-    // "lib": ["ES2021.String"]
   }
 }
