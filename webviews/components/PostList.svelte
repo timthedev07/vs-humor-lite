@@ -33,8 +33,6 @@
           mediaMetadata={media_metadata}
         />
       {/each}
-    {:else}
-      <img src="static/loading.svg" alt="" />
     {/if}
     {#if loadingActive}
       <Icon name="loading" />
