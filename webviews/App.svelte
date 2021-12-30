@@ -19,10 +19,6 @@
     width: 100%;
   }
 
-  main {
-    padding: 8px;
-  }
-
   h2,
   h5 {
     text-align: center;
