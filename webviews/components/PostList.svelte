@@ -3,6 +3,7 @@
   import type { RedditPost } from "../lib/types";
   import { getPosts } from "../lib/getPosts";
   import Post from "./Post.svelte";
+  import Icon from "./Icon.svelte";
 
   let apiResponse: RedditPost[];
   let lastFetch: number;
@@ -33,17 +34,21 @@
         />
       {/each}
     {:else}
-      <!-- <img src="../images/loading.svg" alt="" /> -->
+      <img src="static/loading.svg" alt="" />
+    {/if}
+    {#if loadingActive}
+      <Icon name="loading" />
     {/if}
     <button
-      class="rounded-none"
       id="load-more-btn"
       disabled={!apiResponse}
       on:click={() => {
+        loadingActive = true;
         getPosts(page, lastFetch).then((res) => {
           apiResponse = [...apiResponse, ...res];
           lastFetch = Date.now();
           page++;
+          loadingActive = false;
         });
       }}>Load More</button
     >
@@ -54,14 +59,15 @@
   button {
     border-radius: 8px;
   }
-  .rounded-none {
-    border-radius: 0;
-  }
 
   #load-more-btn {
-    background-color: cadetblue;
+    background-color: rgb(64, 117, 119);
     width: 100% !important;
     max-width: none;
+    margin-top: 40px;
+  }
+  #load-more-btn:hover {
+    background-color: rgb(74, 127, 129);
   }
 
   .posts-container {
