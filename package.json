@@ -1,6 +1,6 @@
 {
   "name": "vs-humor-lite",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publisher": "timthedev07",
   "galleryBanner": {
     "color": "#bd9982"
@@ -14,7 +14,7 @@
     "name": "Tim"
   },
   "displayName": "vs-humor-lite",
-  "description": "Slacking off a work right in VSCode.",
+  "description": "Slacking off at work right in VSCode.",
   "license": "MIT",
   "engines": {
     "vscode": "^1.63.0"
