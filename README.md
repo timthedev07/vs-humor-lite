@@ -1,3 +1,3 @@
 # vs-humor-lite
 
-Start slacking off on `r/ProgrammerHumor` directly in VSCode - The ultimate procrastination tool.
+A lite browser of the `r/ProgrammerHumor` subreddit, built for in-vscode procrastination.
